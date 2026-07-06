@@ -11,4 +11,16 @@ contract Universidad000240849 {
 
     Estudiante[] public estudiantes;
 
+    function registrarEstudiante(
+        uint256 _id,
+        string memory _nombre,
+        string memory _carrera
+    ) public {
+
+        estudiantes.push(
+            Estudiante(_id, _nombre, _carrera)
+        );
+
+    }
+
 }
